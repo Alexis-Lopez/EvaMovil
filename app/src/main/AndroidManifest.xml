@@ -20,7 +20,7 @@
             android:name=".ReferenciaActivity"
             android:label="@string/title_activity_referencia"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ConductorActivity"></activity>
+        <activity android:name=".ConductorActivity" />
     </application>
 
 </manifest>

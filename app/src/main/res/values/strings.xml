@@ -4,4 +4,8 @@
     <string name="Username">Nombre del Usuario</string>
     <string name="Password">Contraseña</string>
     <string name="btnLogin_Text">Iniciar Sesión</string>
+    <string name="title_Conductor">Viajes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
