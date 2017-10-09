@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Eva(Transportes)</string>
+    <string name="title_activity_referencia">ReferenciaActivity</string>
+    <string name="Username">Nombre del Usuario</string>
+    <string name="Password">Contraseña</string>
+    <string name="btnLogin_Text">Iniciar Sesión</string>
 </resources>
