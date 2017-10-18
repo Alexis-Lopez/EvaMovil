@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Eva(Transportes).iml" filepath="$PROJECT_DIR$/Eva(Transportes).iml" />
+      <module fileurl="file://$PROJECT_DIR$/EvaMovil.iml" filepath="$PROJECT_DIR$/EvaMovil.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
