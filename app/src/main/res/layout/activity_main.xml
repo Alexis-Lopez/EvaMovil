@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -35,8 +36,8 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp">
 
                 <android.support.design.widget.TextInputEditText
                     android:id="@+id/Username"
@@ -62,15 +63,17 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:layout_marginTop="30dp"
-                android:layout_margin="5dp"
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/btnLogin_Text"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
                 android:background="@color/colorNormal"
+                android:text="@string/btnLogin_Text"
                 android:textColor="@color/colorTextWhite"
-                android:textColorHighlight="@color/colorPresionButton"/>
+                android:textColorHighlight="@color/colorPresionButton"
+                android:onClick="mostrarViajesalConductor"
+                />
         </LinearLayout>
 
     </LinearLayout>
