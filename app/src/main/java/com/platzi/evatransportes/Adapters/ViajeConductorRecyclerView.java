@@ -1,6 +1,7 @@
 package com.platzi.evatransportes.Adapters;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +10,7 @@ import android.widget.TextView;
 
 import com.platzi.evatransportes.Model.Viaje;
 import com.platzi.evatransportes.R;
-
-import org.w3c.dom.Text;
+import com.platzi.evatransportes.View.DetailsConductActivity;
 
 import java.util.ArrayList;
 
@@ -43,6 +43,15 @@ public class ViajeConductorRecyclerView extends RecyclerView.Adapter<ViajeConduc
         Viaje viaje =  viajes.get(position);
         holder.DestinoView.setText(viaje.getDestino());
         holder.EstadoView.setText(viaje.getEstado());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity, DetailsConductActivity.class);
+                activity.startActivity(intent);
+
+            }
+        });
     }
 
     @Override

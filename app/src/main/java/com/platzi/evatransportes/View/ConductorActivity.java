@@ -1,4 +1,4 @@
-package com.platzi.evatransportes;
+package com.platzi.evatransportes.View;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import com.platzi.evatransportes.Fracments.ListaViajesFragment;
+import com.platzi.evatransportes.R;
 
 public class ConductorActivity extends AppCompatActivity {
 
