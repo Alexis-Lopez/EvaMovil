@@ -42,10 +42,6 @@ public class ListaViajesFragment extends Fragment {
 
         viajesCondRecycler.setAdapter(viajeConductorRecyclerView );
 
-
-
-
-
         return view;
 
     }
