@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.platzi.evatransportes.View.ConductorActivity;
-
 public class LoginActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +15,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void mostrarViajesalConductor(View view){
         Intent intent = new Intent(this,ConductorActivity.class);
+        startActivity(intent);
+    }
+
+    public void mostrarTransportista(View view){
+        Intent intent =  new Intent(this, TransportistaActivity.class);
         startActivity(intent);
     }
 

@@ -1,13 +1,10 @@
-package com.platzi.evatransportes.View;
+package com.platzi.evatransportes;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 
-import com.platzi.evatransportes.Fracments.ListaViajesFragment;
+import com.platzi.evatransportes.Fracments.ViajesConductorFragment;
 import com.platzi.evatransportes.R;
 
 public class ConductorActivity extends AppCompatActivity {
@@ -17,7 +14,7 @@ public class ConductorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conductor);
       // showToolbar(getResources().getString(R.string.title_Conductor),false);
-        ListaViajesFragment listaViajesFragment = new ListaViajesFragment();
+        ViajesConductorFragment listaViajesFragment = new ViajesConductorFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.content,listaViajesFragment)
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
     }
