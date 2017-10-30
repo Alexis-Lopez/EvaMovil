@@ -5,12 +5,12 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.platzi.evatransportes.Fracments.ConductoresFragment;
-import com.platzi.evatransportes.Fracments.NotificationFragment;
-import com.platzi.evatransportes.Fracments.ViajesConductorFragment;
-import com.platzi.evatransportes.Model.Notificaciones;
+import com.platzi.evatransportes.Fragments.ClientesFragment;
+import com.platzi.evatransportes.Fragments.ConductoresFragment;
+import com.platzi.evatransportes.Fragments.NotificationFragment;
+import com.platzi.evatransportes.Fragments.ViajesConductorFragment;
 import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabReselectListener;
+import com.roughike.bottombar.OnTabSelectListener;
 
 public class TransportistaActivity extends AppCompatActivity {
 
@@ -20,12 +20,9 @@ public class TransportistaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_transportista);
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottonbar);
-        bottomBar.setDefaultTab(R.id.tabs_notification);
-
-        bottomBar.setOnTabReselectListener(new OnTabReselectListener() {
+        bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
-            public void onTabReSelected(@IdRes int tabId) {
-
+            public void onTabSelected(@IdRes int tabId) {
                 switch (tabId){
                     case R.id.tabs_notification:
                         NotificationFragment notificationFragment = new NotificationFragment();
@@ -34,18 +31,18 @@ public class TransportistaActivity extends AppCompatActivity {
                         break;
 
                     case R.id.tabs_clientes:
-                        ViajesConductorFragment viajesConductorFragment =  new ViajesConductorFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,viajesConductorFragment)
+                        ClientesFragment clientesFragment =  new ClientesFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,clientesFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
                         break;
 
                     case R.id.tabs_viajes:
                         ViajesConductorFragment v =  new ViajesConductorFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,v)
-                            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
+                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
                         break;
                     case R.id.tabs_conductores:
-                    ConductoresFragment conductoresFragment = new ConductoresFragment();
+                        ConductoresFragment conductoresFragment = new ConductoresFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,conductoresFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).commit();
                         break;

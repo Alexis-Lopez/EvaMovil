@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.platzi.evatransportes.LoginActivity">
+    tools:context="com.platzi.evatransportes.View.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,6 +85,18 @@
                 android:textColor="@color/colorTextWhite"
                 android:textColorHighlight="@color/colorPresionButton"
                 android:onClick="mostrarTransportista"
+                />
+            <Button
+                android:id="@+id/btn_Cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorNormal"
+                android:text="@string/btnLogin_Text"
+                android:textColor="@color/colorTextWhite"
+                android:textColorHighlight="@color/colorPresionButton"
+                android:onClick="mostrarViajesCliente"
                 />
         </LinearLayout>
 

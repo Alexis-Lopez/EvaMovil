@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.platzi.evatransportes.View.DetailsConductActivity">
+    tools:context="com.platzi.evatransportes.View.DetailsGenericActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -76,12 +77,21 @@
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="60dp"
                 android:layout_marginBottom="3dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="0dp"
                 card_view:cardElevation="0dp">
 
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Detalle del Viaje"
+                       android:textSize="20dp"
+                       android:textAlignment="center"
+                       android:layout_gravity="center"
+                       />
 
             </android.support.v7.widget.CardView>
 

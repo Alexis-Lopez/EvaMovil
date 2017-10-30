@@ -1,9 +1,8 @@
-package com.platzi.evatransportes.Fracments;
+package com.platzi.evatransportes.Fragments;
 
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
