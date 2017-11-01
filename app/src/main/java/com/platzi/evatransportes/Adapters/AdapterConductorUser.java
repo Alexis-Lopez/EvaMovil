@@ -6,40 +6,40 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.platzi.evatransportes.Model.Viaje;
 import com.platzi.evatransportes.R;
+import com.platzi.evatransportes.View.DetailsConductorActivity;
 import com.platzi.evatransportes.View.DetailsGenericActivity;
 
 import java.util.ArrayList;
 
 /**
- * Created by ISA on 10/11/2017.
+ * Created by trini on 27/10/17.
  */
 
-public class ViajeConductorRecyclerView extends RecyclerView.Adapter<ViajeConductorRecyclerView.ViajesCDViewHolder> {
-
+public class AdapterConductorUser extends RecyclerView.Adapter<AdapterConductorUser.VielHolder> {
     private ArrayList<Viaje> viajes;
     private int resources;
-    private Activity activity;
 
-    public ViajeConductorRecyclerView(ArrayList<Viaje> viajes, int resources, Activity activity) {
+    public AdapterConductorUser(ArrayList<Viaje> viajes, int resources, Activity activity) {
         this.viajes = viajes;
         this.resources = resources;
         this.activity = activity;
     }
 
-
+    private Activity activity;
 
     @Override
-    public ViajesCDViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public VielHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(resources,parent,false);
-        return new ViajesCDViewHolder(view);
+        return new VielHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ViajesCDViewHolder holder, int position) {
+    public void onBindViewHolder(VielHolder holder, int position) {
         Viaje viaje =  viajes.get(position);
         holder.DestinoView.setText(viaje.getDestino());
         holder.EstadoView.setText(viaje.getEstado());
@@ -47,11 +47,12 @@ public class ViajeConductorRecyclerView extends RecyclerView.Adapter<ViajeConduc
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, DetailsGenericActivity.class);
+                Intent intent = new Intent(activity, DetailsConductorActivity.class);
                 activity.startActivity(intent);
 
             }
         });
+
     }
 
     @Override
@@ -59,11 +60,11 @@ public class ViajeConductorRecyclerView extends RecyclerView.Adapter<ViajeConduc
         return viajes.size();
     }
 
-    public class ViajesCDViewHolder extends RecyclerView.ViewHolder {
+    public class VielHolder extends RecyclerView.ViewHolder {
         private TextView DestinoView;
         private TextView EstadoView;
 
-        public ViajesCDViewHolder(View itemView) {
+        public VielHolder(View itemView) {
             super(itemView);
 
             DestinoView = (TextView) itemView.findViewById(R.id.destCond);

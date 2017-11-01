@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.platzi.evatransportes.LoginActivity">
+    tools:context="com.platzi.evatransportes.View.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:text="@string/btnLogin_Text"
                 android:textColor="@color/colorTextWhite"
                 android:textColorHighlight="@color/colorPresionButton"
-                android:onClick="mostrarViajesalConductor"
+                android:onClick="usuarios"
                 />
         </LinearLayout>
 

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iconStatus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/ic_report_problem"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvcliTitle"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="44dp"
+                android:text="Descripcion"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/tvcliDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora Aproximada"
+                android:textSize="15dp"
+                android:paddingRight="44dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tvcliEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:paddingRight="44dp"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imgMenuclien"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_more_vert"
+                android:tint="@color/textColorBlack"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
