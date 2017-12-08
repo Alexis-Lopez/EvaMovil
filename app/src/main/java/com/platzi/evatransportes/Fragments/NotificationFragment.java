@@ -48,10 +48,8 @@ public class NotificationFragment extends Fragment {
 
     public ArrayList<Notificaciones> buidNotification(){
         ArrayList<Notificaciones> viajes = new ArrayList<>();
-        viajes.add(new Notificaciones("Chiapas","Precaucion","A ver que sale xD"));
-        viajes.add(new Notificaciones("Chiapas","Precaucion","A ver que sale xD"));
-        viajes.add(new Notificaciones("Chiapas","Precaucion","A ver que sale xD"));
-        viajes.add(new Notificaciones("Chiapas","Precaucion","A ver que sale xD"));
+        viajes.add(new Notificaciones("Nuevo Laredo - Chiapas ","Precaucion","Desastres Naturales"));
+
 
         return viajes;
     }

@@ -4,8 +4,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.platzi.evatransportes.Fragments.ConductorUserFragment;
-import com.platzi.evatransportes.Fragments.ViajesConductorFragment;
+import com.platzi.evatransportes.UserDrivers.View.ConductorUserFragment;
 
 public class ConductorActivity extends AppCompatActivity {
 

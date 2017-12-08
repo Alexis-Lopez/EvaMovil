@@ -10,6 +10,10 @@ import android.location.LocationManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,6 +21,10 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.platzi.evatransportes.Adapters.AdapterItemDetails;
+import com.platzi.evatransportes.Model.ItemDetails;
+
+import java.util.ArrayList;
 
 public class ViajesActivity extends FragmentActivity implements OnMapReadyCallback,LocationListener {
 
@@ -27,6 +35,10 @@ public class ViajesActivity extends FragmentActivity implements OnMapReadyCallba
     public Criteria criteria;
     public String bestProvider;
 
+    private View v;
+    private RecyclerView details;
+    private AdapterItemDetails mAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +47,25 @@ public class ViajesActivity extends FragmentActivity implements OnMapReadyCallba
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
         getLocation();
+
+        details = (RecyclerView) findViewById(R.id.ViajeDetalle);
+        mAdapter = new AdapterItemDetails(buildText());
+        RecyclerView.LayoutManager mLayout = new LinearLayoutManager(getApplicationContext());
+        details.setLayoutManager(mLayout);
+        details.setItemAnimator(new DefaultItemAnimator());
+        details.setAdapter(mAdapter);
+
+
+    }
+
+    public ArrayList<ItemDetails> buildText(){
+        ArrayList<ItemDetails> item = new ArrayList<>();
+        item.add(new ItemDetails("Chiapas","Precaucion"));
+        item.add(new ItemDetails("Saltillo","Pesado"));
+        item.add(new ItemDetails("San Luis Potosi","Delicado"));
+        item.add(new ItemDetails("Camargo","Precaucion"));
+        return item;
     }
 
 

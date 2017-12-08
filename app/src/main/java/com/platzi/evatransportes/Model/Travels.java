@@ -4,7 +4,7 @@ package com.platzi.evatransportes.Model;
  * Created by ISA on 10/11/2017.
  */
 
-public class Viaje {
+public class Travels  {
     public String getDestino() {
         return Destino;
     }
@@ -21,7 +21,7 @@ public class Viaje {
         Estado = estado;
     }
 
-    public Viaje(String destino, String estado) {
+    public Travels(String destino, String estado) {
         Destino = destino;
         Estado = estado;
     }

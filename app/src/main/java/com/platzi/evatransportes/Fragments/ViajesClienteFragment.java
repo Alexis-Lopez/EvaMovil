@@ -9,11 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.platzi.evatransportes.Adapters.AdapterConductorUser;
 import com.platzi.evatransportes.Adapters.AdapterViajesCliente;
-import com.platzi.evatransportes.Adapters.ViajeConductorRecyclerView;
 import com.platzi.evatransportes.Model.Notificaciones;
-import com.platzi.evatransportes.Model.Viaje;
 import com.platzi.evatransportes.R;
 
 import java.util.ArrayList;
@@ -56,7 +53,6 @@ public class ViajesClienteFragment extends Fragment {
         viajes.add(new Notificaciones("Chiapas","Precaucion","A ver que sale xD"));
         viajes.add(new Notificaciones("Chiapas","Precaucion","A ver que sale xD"));
         viajes.add(new Notificaciones("Chiapas","Precaucion","A ver que sale xD"));
-
         return viajes;
     }
 

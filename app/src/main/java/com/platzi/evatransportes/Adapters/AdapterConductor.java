@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.platzi.evatransportes.Model.Conductor;
 import com.platzi.evatransportes.R;
+import com.platzi.evatransportes.ViajesConductorActivity;
 import com.platzi.evatransportes.View.DetailsGenericActivity;
 
 import java.util.ArrayList;
@@ -47,7 +48,7 @@ public class AdapterConductor extends RecyclerView.Adapter<AdapterConductor.Viel
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, DetailsGenericActivity.class);
+                Intent intent = new Intent(activity, ViajesConductorActivity.class);
                 activity.startActivity(intent);
             }
         });

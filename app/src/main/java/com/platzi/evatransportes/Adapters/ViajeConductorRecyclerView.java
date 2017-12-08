@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.platzi.evatransportes.Model.Viaje;
+import com.platzi.evatransportes.Model.Travels;
 import com.platzi.evatransportes.R;
-import com.platzi.evatransportes.View.DetailsGenericActivity;
+import com.platzi.evatransportes.ViajesConductorActivity;
 
 import java.util.ArrayList;
 
@@ -20,11 +20,11 @@ import java.util.ArrayList;
 
 public class ViajeConductorRecyclerView extends RecyclerView.Adapter<ViajeConductorRecyclerView.ViajesCDViewHolder> {
 
-    private ArrayList<Viaje> viajes;
+    private ArrayList<Travels> viajes;
     private int resources;
     private Activity activity;
 
-    public ViajeConductorRecyclerView(ArrayList<Viaje> viajes, int resources, Activity activity) {
+    public ViajeConductorRecyclerView(ArrayList<Travels> viajes, int resources, Activity activity) {
         this.viajes = viajes;
         this.resources = resources;
         this.activity = activity;
@@ -40,14 +40,14 @@ public class ViajeConductorRecyclerView extends RecyclerView.Adapter<ViajeConduc
 
     @Override
     public void onBindViewHolder(ViajesCDViewHolder holder, int position) {
-        Viaje viaje =  viajes.get(position);
+        Travels viaje =  viajes.get(position);
         holder.DestinoView.setText(viaje.getDestino());
         holder.EstadoView.setText(viaje.getEstado());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, DetailsGenericActivity.class);
+                Intent intent = new Intent(activity, ViajesConductorActivity.class);
                 activity.startActivity(intent);
 
             }
@@ -67,7 +67,7 @@ public class ViajeConductorRecyclerView extends RecyclerView.Adapter<ViajeConduc
             super(itemView);
 
             DestinoView = (TextView) itemView.findViewById(R.id.destCond);
-            EstadoView = (TextView) itemView.findViewById(R.id.estadoCond);
+            EstadoView = (TextView) itemView.findViewById(R.id.hplanen);
 
         }
     }

@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.platzi.evatransportes.Adapters.ViajeConductorRecyclerView;
-import com.platzi.evatransportes.Model.Viaje;
+import com.platzi.evatransportes.Model.Travels;
 import com.platzi.evatransportes.R;
 
 import java.util.ArrayList;
@@ -46,12 +46,12 @@ public class ViajesConductorFragment extends Fragment {
 
     }
 
-    public ArrayList<Viaje> buidViajes(){
-        ArrayList<Viaje> viajes = new ArrayList<>();
-        viajes.add(new Viaje("Chiapas","Precaucion"));
-        viajes.add(new Viaje("Saltillo","Pesado"));
-        viajes.add(new Viaje("San Luis Potosi","Delicado"));
-        viajes.add(new Viaje("Camargo","Precaucion"));
+    public ArrayList<Travels> buidViajes(){
+        ArrayList<Travels> viajes = new ArrayList<>();
+        viajes.add(new Travels("Chiapas","Precaucion"));
+        viajes.add(new Travels("Saltillo","Pesado"));
+        viajes.add(new Travels("San Luis Potosi","Delicado"));
+        viajes.add(new Travels("Camargo","Precaucion"));
 
         return viajes;
     }

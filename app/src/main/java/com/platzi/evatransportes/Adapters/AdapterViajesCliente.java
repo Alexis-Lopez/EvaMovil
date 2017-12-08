@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.platzi.evatransportes.Model.Notificaciones;
 import com.platzi.evatransportes.R;
+import com.platzi.evatransportes.ViajesActivity;
 import com.platzi.evatransportes.View.DetailsConductorActivity;
 
 import java.util.ArrayList;
@@ -52,7 +53,7 @@ public class AdapterViajesCliente extends RecyclerView.Adapter<AdapterViajesClie
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =  new Intent(activity, DetailsConductorActivity.class);
+                Intent intent =  new Intent(activity, ViajesActivity.class);
                 activity.startActivity(intent);
             }
         });

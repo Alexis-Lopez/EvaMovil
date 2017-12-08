@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.platzi.evatransportes.View.LoginActivity">
+    tools:context="com.platzi.evatransportes.User.Login.View.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,7 +43,9 @@
                     android:id="@+id/Username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/Username" />
+                    android:hint="@string/Username"
+                    android:inputType="textEmailAddress"
+                    />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -58,7 +60,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/Password"
-                    android:textColor="@color/textColorBlack" />
+                    android:textColor="@color/textColorBlack"
+                    android:inputType="textPassword"/>
 
             </android.support.design.widget.TextInputLayout>
 

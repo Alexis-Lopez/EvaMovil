@@ -47,10 +47,7 @@ public class ConductoresFragment extends Fragment {
 
     public ArrayList<Conductor> buidClientes(){
         java.util.ArrayList<Conductor> clientes = new ArrayList<>();
-        clientes.add(new Conductor("Juan","Privada 23","Numero de Viajes : 4"));
-        clientes.add(new Conductor("Pedro","Privada 24","Numero de Viajes :5"));
-        clientes.add(new Conductor("Santiago","Privada 25","Numero de Viajes :6"));
-        clientes.add(new Conductor("Cristal","Privada 27","Numero de Viajes:2"));
+        clientes.add(new Conductor("Juan Ahumada","Viaje:Nuevo Laredo - Monterrey","Numero de Viajes : 1"));
 
         return clientes;
     }

@@ -31,15 +31,22 @@
                 android:id="@+id/destCond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Desastino Viajas\e"
+                android:text="Origen-Destino"
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/estadoCond"
+                android:id="@+id/hplanen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Estado"
                 android:textSize="16dp" />
+            <TextView
+                android:id="@+id/kmsCond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kilimetros:  2000km"
+                android:textSize="16dp"
+                />
 
     </LinearLayout>
 
